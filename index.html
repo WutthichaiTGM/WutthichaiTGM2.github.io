@@ -1,11 +1,2246 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI</title>
-</head>
-<body>
+<html lang="th" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" />
+<meta name="title" content="โปรแกรมคำนวณหาค่าดัชนีมวลกาย (BMI) |  Bangkok Hospital" />
+<link rel="canonical" href="https://www.bangkokhospital.com/th/center/bariatric-surgery/program-check-bmi" />
+<meta name="description" content="โปรแกรมคำนวณหาค่าดัชนีมวลกาย (BMI) :" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/themes/custom/bdms/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="th" href="https://www.bangkokhospital.com/th/center/bariatric-surgery/program-check-bmi" />
+<link rel="revision" href="/th/center/bariatric-surgery/program-check-bmi" />
+
+    <title>โปรแกรมคำนวณหาค่าดัชนีมวลกาย (BMI) |  Bangkok Hospital</title>
+
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PWK8ZV');</script>
+		<!-- End Google Tag Manager -->
+
+
+		<!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/themes/custom/bdms/assets/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/themes/custom/bdms/assets/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/themes/custom/bdms/assets/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/themes/custom/bdms/assets/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/themes/custom/bdms/assets/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/themes/custom/bdms/assets/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/themes/custom/bdms/assets/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/themes/custom/bdms/assets/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/themes/custom/bdms/assets/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/themes/custom/bdms/assets/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/themes/custom/bdms/assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/themes/custom/bdms/assets/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/themes/custom/bdms/assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/themes/custom/bdms/assets/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/themes/custom/bdms/assets/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<meta charset="utf-8">
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"4cd8688db1",applicationID:"79192854"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+    <link rel="stylesheet" href="/sites/default/files/css/css_qMY6angjhGMOxuMyCsuhRkBR5lwxDnJGSCR9kZ6qHMU.css?q4x6p1" media="all" />
+<link rel="stylesheet" href="/sites/default/files/css/css_NBjNBILCPu6VoR3IDW8Xmgv7qBygHp_neEFxoQkQVGE.css?q4x6p1" media="all" />
+
     
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+  </head>
+ 
+  <body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWK8ZV"
+					height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
+      <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<!--Slick -->
+	<link rel="stylesheet" type="text/css" href="/themes/custom/bdms/js/slick/slick.css">
+  	<link rel="stylesheet" type="text/css" href="/themes/custom/bdms/js/slick/slick-theme.css">
+  	<!-- Date Picker -->
+  	<link rel="stylesheet" href="/themes/custom/bdms/js/pickdate/themes/default.css">
+	<link rel="stylesheet" href="/themes/custom/bdms/js/pickdate/themes/default.date.css">
+	<link rel="stylesheet" href="/themes/custom/bdms/js/pickdate/themes/classic.time.css">
+
+	<!-- AWESOME FONT -->
+	<link rel="stylesheet" href="/themes/custom/bdms/assets/font/Font-awesome/css/font-awesome.min.css">
+
+	<!-- BASE STYLE -->
+	<link rel="stylesheet" href="/themes/custom/bdms/assets/css/findDoctorModal.css">
+	<link rel="stylesheet" href="/themes/custom/bdms/assets/css/megamenu_mobile.css">
+		<link rel="stylesheet" href="/themes/custom/bdms/assets/css/fontthai.css">
+		<link rel="stylesheet" href="/themes/custom/bdms/assets/css/base.css">
+	<link rel="stylesheet" href="/themes/custom/bdms/assets/css/layout.css">
+	<link rel="stylesheet" href="/themes/custom/bdms/assets/css/nav.css">
+	<link rel="stylesheet" href="/themes/custom/bdms/assets/css/otherpagenav.css">
+	<link rel="stylesheet" href="/themes/custom/bdms/assets/css/footer.css">
+
+	<!-- CDN INCLUDE -->
+
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+	<!-- COMPONENT STYLE -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="/themes/custom/bdms/assets/css/centerAndClinicDetail.css" />
+	<link rel="stylesheet" href="/themes/custom/bdms/assets/css/switchmenu.css" />
+		<link rel="stylesheet" href="/themes/custom/bdms/assets/css/centerAndClinic-th.css">
+	    <link rel="stylesheet" href="/themes/custom/bdms/assets/css/content.css" title="content" />
+	<link rel="stylesheet" href="/themes/custom/bdms/assets/css/card.css" />
+	<link rel="stylesheet" href="/themes/custom/bdms/assets/css/searchResult.css">
+<link rel="stylesheet" href="/themes/custom/bdms/assets/css/findDoctorModal.css">
+
+
+
+
+<!-- LOADER -->
+<script>
+$(document).on('ready', function() {
+		$(".se-pre-con").fadeOut("slow");;
+});
+</script>
+<div class="se-pre-con">
+	<div class="d-flex justify-content-center align-items-center w-100 h-100">
+	<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+	</div>
+</div>
+<!-- LOADER -->
+
+
+
+<link rel="stylesheet" href="/themes/custom/bdms/assets/css/searchResult.css">
+
+<div id="datePickerContainer"></div>
+<div class="findDoctorModal d-none" id="findDoctorModal">
+    <div class="closeButton" id="findDoctorCloseModal">
+		<i class="fa fa-times" aria-hidden="true"></i>ปิด
+	</div>
+	<div class="icon">
+		<img src="/themes/custom/bdms/assets/icon/findDoctor.svg">
+	</div>
+	<div class="modalTitle">
+		<h2>ค้นหาแพทย์</h2>
+	</div>
+	<div class="resultBanner index">
+		<div class="container">
+
+		<!-- SEARCH SECTION -->
+	
+<form block="block-searchform" action="https://bhqdoctors.bdms.co.th/bdms/th/searchResult.php?text_search=" method="get" id="search-block-form" accept-charset="UTF-8">
+			<div class="searchBar">
+				<button class="searchButton forceShow" id="searchResultButton-finddoctor-th">
+					ค้นหา <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+				</button>
+				<div class="icon">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</div>
+				<div class="input">
+					<input type="text" placeholder="ค้นหา" id="searchResultBox-finddoctor-th">
+				</div>
+				<div class="result">
+					<!-- 106 results -->
+				</div>
+			</div>
+</form>
+
+		
+			<!-- <div class="selectBar">
+				<div class="box rightBorder only-desktop" id="filterCenterButton">
+					<div class="text uppercase">
+						Centers
+					</div>
+					<div class="icon">
+						<i class="fa fa-caret-down" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="box rightBorder only-desktop" id="filterClinicButton">
+					<div class="text uppercase">
+						Clinics
+					</div>
+					<div class="icon">
+						<i class="fa fa-caret-down" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="box rightBorder only-desktop" id="filterLanguageButton">
+					<div class="text uppercase">
+						Language
+					</div>
+					<div class="icon">
+						<i class="fa fa-caret-down" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="box rightBorder only-desktop" id="filterGenderButton">
+					<div class="text uppercase">
+						Gender
+					</div>
+					<div class="icon">
+						<i class="fa fa-caret-down" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="box selectBarMobile only-mobile" id="selectBarMobile">
+					<div class="text uppercase">
+						Filter
+					</div>
+					<div class="icon">
+						<i class="fa fa-caret-down" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="box datetime">
+					<div class="time">
+						<input
+	                    id="timePickerInputModal"
+	                    class="timepickerModal"
+	                    type="time"
+	                    name="time"
+	                    autofocuss>
+						<i class="fa fa-clock-o" aria-hidden="true"></i>
+					</div>
+					<div class="calendar">
+						<input
+		                	type="submit"
+		                    id="datePickerInputModal"
+		                    class="datepickerModal"
+		                    name="date"
+		                    type="text"
+		                    autofocuss
+		                    value="14 August, 2014"
+		                    >
+						<i class="fa fa-calendar" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div> -->
+
+						<div class="categoryCon">
+				<? $countBox = 1 ?>
+				<div class="row" id="findoctorCategoryCon">
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Aesthetic_and_Anti_Aging&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/AestheticAnti-Aging.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="Aesthetic_and_Anti_Aging">
+							ความงามและการชะลอวัย
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Bone_and_Spine&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/Bone&Spine.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="Bone_and_Spine">
+							กระดูกและข้อ
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Brain&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/Brain.svg" class="t2">
+							</div >
+							<div class="text uppercase" id="Brain">
+							สมองและระบบประสาท
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Cancer&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/Cancer.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="Cancer">
+							มะเร็ง
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Chest_Respiratory_System&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/ChestRespiratorysystem.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="Chest_Respiratory_System">
+							ปอดและระบบทางเดินหายใจ
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Child_Wellness&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/ChildWellness.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="Child_Wellness">
+							สุขภาพเด็กและวัยรุ่น
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Dental_Care&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/DentalCare.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="Dental_Care">
+							ทันตกรรม
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Emergency_Referral&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/EmergencyReferral.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="Emergency_Referral">
+							อุบัติเหตุและการส่งต่อผู้ป่วย
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Eye_and_Ent&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/EyeEnt.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="Eye_and_Ent">
+							ตา หู คอ จมูก
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Female_Wellness&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/FemaleWellness.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="Female_Wellness">
+							สุขภาพสตรี
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Male_Wellness&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/MaleWellness.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="Male_Wellness">
+							สุขภาพเพศชาย
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Good_Health&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/GoodHealth.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="Good_Health">
+							การส่งเสริมและตรวจสุขภาพ
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=International_Medical_Services&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/InternationalMedicalServices.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="International_Medical_Services">
+							ศูนย์บริการผู้ป่วยชาวต่างชาติ
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Internal_Medicines&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/InternalMedicines.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="Internal_Medicines">
+							อายุรกรรม
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Recovery_and_Rehabilitation&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/Recovery&Rehabilitation.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="Recovery_and_Rehabilitation">
+							ฟื้นฟูสมรรถภาพและกายภาพบำบัด
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Surgery&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/Surgery.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="Surgery">
+							ศัลยกรรมและการผ่าตัด
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Mother_and_Child&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/Mother&Child.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="Mother_and_Child">
+							แม่และเด็ก
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=GI_and_Liver&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/GI&Liver.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="GI_and_Liver">
+							ระบบทางเดินอาหารและตับ
+							</div>
+						</div></a>
+					</div>
+					<!-- <div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/trauma.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="trauma">
+							Trauma Center
+							</div>
+						</div>
+					</div> -->
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Geriatric_and_Rehabilitation&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/GeriatricRehabilitation.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="Geriatric_and_Rehabilitation">
+							การดูแลผู้สูงอายุและเวชศาสตร์ฟื้นฟู
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Occupational_Health&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/OccupationalHealth.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="Occupational_Health">
+							อาชีวอนามัย
+							</div>
+						</div></a>
+					</div>
+					<div class="col-md-3 col-lg-2 col-sm-4 col-6 categoryBox" id="categoryBox<? echo $countBox++  ?>">
+					<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?category=Heart&text_search=">
+						<div class="box">
+							<div class="icon">
+								<img src="/themes/custom/bdms/assets/icon/clinic/Heart.svg" class="t2">
+							</div>
+							<div class="text uppercase" id="Heart">
+							หัวใจ
+							</div>
+						</div></a>
+					</div>
+				</div>
+							</div>
+
+		</div>
+
+		
+
+		<!-- <div class="filterSelectCon">
+			<div id="filterLanguageModal">
+				<div class="container">
+					<div class="selectBarMobileTitle" id="accordianLanguage">
+						LANGUAGE
+						<div class="icon">
+							<i class="fa fa-caret-down" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="filterSelect" id="filterLanguage">
+					</div>
+				</div>
+			</div>
+			<div id="filterClinicModal">
+				<div class="container">
+					<div class="selectBarMobileTitle" id="accordianClinic">
+						CLINIC
+						<div class="icon">
+							<i class="fa fa-caret-down" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="filterSelect" id="filterClinic">
+					</div>
+				</div>
+			</div>
+			<div id="filterCenterModal">
+				<div class="container">
+					<div class="selectBarMobileTitle" id="accordianCenter">
+						CENTER
+						<div class="icon">
+							<i class="fa fa-caret-down" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="filterSelect" id="filterCenter">
+					</div>
+				</div>
+			</div>
+			<div id="filterGenderModal">
+				<div class="container">
+					<div class="selectBarMobileTitle" id="accordianGender">
+						GENDER
+						<div class="icon">
+							<i class="fa fa-caret-down" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="filterSelect" id="filterGender">
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+	</div>
+
+	<div class="resultFilter index">
+		<div class="filterCon" id="filterConPlace">
+		</div>
+	</div>
+		
+	<div class="textContainer">
+		<h2 class="feelTitle">ไม่แน่ใจว่าคุณรู้สึกอย่างไร ?</h2>
+		<div class="normalText">
+			คุณสามารถ <a href="#">นัดหมายแพทย์</a> โดยไม่ต้องค้นหาแพทย์
+			<br><br>
+			การนัดหมายแพทย์นี้ ไม่เหมาะสมในกรณีจำเป็นฉุกเฉิน
+			<br>
+			และไม่สามารถทำในวันเดียวกันกับวันเข้าพบแพทย์
+		</div>
+		<div class="call">
+			ในกรณีฉุกเฉินโปรดติดต่อผ่านเบอร์โทรศัพท์ +662 310 3000 หรือ 1719 (เบอร์ติดต่อท้องถิ่น)
+		</div>
+	</div>
+	</div>
+<script>
+			$(document).ready(function(){
+				$("#searchResultButton-finddoctor-en").keypress(function(e) {
+					if(e.which == 13) {
+						window.location = "https://bhqdoctors.bdms.co.th/bdms/pages/eng/searchResult.php?text_search="+$('#searchResultBox-findDoctor-en').val();
+					}
+				})
+    $("#searchResultButton-finddoctor-en").click(function(e){
+        e.preventDefault();
+     window.location = "https://bhqdoctors.bdms.co.th/bdms/pages/eng/searchResult.php?text_search="+$('#searchResultBox-findDoctor-en').val();
+    })
+});
+
+</script>
+<script>
+
+			$(document).ready(function(){
+			$("#searchResultButton-finddoctor-th").keypress(function(e) {
+					if(e.which == 13) {
+						window.location = "https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?text_search="+$('#searchResultBox-findDoctor-th').val();
+					}
+				})
+    $("#searchResultButton-finddoctor-th").click(function(e){
+        e.preventDefault();
+     window.location = "https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php?text_search="+$('#searchResultBox-finddoctor-th').val();
+    })
+});
+
+</script>
+
+<nav>
+	<div class="logo">
+		  <div>
+    <div id="block-bdms-branding">
+  
+    
+        <a href="/th" title="Home" rel="home">
+      <img src="/themes/custom/bdms/logo.svg" alt="Home" />
+    </a>
+      
+</div>
+
+  </div>
+
+	</div>
+	<div class="menu">
+			 <div class="searchSection" id="searchSection" style="display: block;">
+			<form block="block-searchform" action="#" method="get" id="search-block-form" accept-charset="UTF-8">
+			<!-- <form block="block-searchform" action="http://search.bangkokhospital.com/th/?q=" method="get" id="search-block-form" accept-charset="UTF-8"> -->
+			<div class="icon">
+				<i class="fa fa-search" aria-hidden="true"></i>
+			</div>
+
+			<input type="text" placeholder="คุณกำลังค้นหาอะไร?" class="TitL" id="indexFindDoctorModalInput" class="form-search" data-drupal-selector="edit-keys" type="search">
+			<div class="button">
+				<button class="t2" class="button js-form-submit form-submit" data-drupal-selector="edit-submit" id="search-front" >
+					ค้นหา
+				</button>
+			</div>
+			</form>
+		</div>
+		<script>
+$(document).ready(function(){
+    $("#search-front").click(function(e){
+        e.preventDefault();
+     // window.location = "http://search.bangkokhospital.com/th/?q="+$('#indexFindDoctorModalInput').val();
+    })
+});
+</script>
+		<div class="navigationMenu" id="navigationMenu">
+				<div class="box" id="navMenuBox1">
+				<div class="selectMenu t2"></div>
+				<div class="text uppercase">ศูนย์รักษาโรค</div>
+				<img src="/themes/custom/bdms/assets/icon/arrow-blue-down.svg" class="arrow">
+			</div>
+			<div class="box" id="navMenuBox2">
+				<div class="selectMenu t2"></div>
+				<div class="text uppercase">ข้อมูลสำหรับผู้ป่วย</div>
+				<img src="/themes/custom/bdms/assets/icon/arrow-blue-down.svg" class="arrow">
+			</div>
+			<div class="box" id="navMenuBox3">
+				<div class="selectMenu t2"></div>
+				<div class="text uppercase">ข้อมูลสุขภาพ</div>
+				<img src="/themes/custom/bdms/assets/icon/arrow-blue-down.svg" class="arrow">
+			</div>
+			<div class="box" id="navMenuBox4">
+				<div class="selectMenu t2"></div>
+				<div class="text uppercase">เกี่ยวกับเรา</div>
+				<img src="/themes/custom/bdms/assets/icon/arrow-blue-down.svg" class="arrow">
+			</div>
+	
+		</div>
+		<div class="box">
+			<div class="text uppercase">
+                					<img src="/themes/custom/bdms/assets/icon/search-blue.svg" class="search t2" id="searchNav">
+				
+				<img src="/themes/custom/bdms/assets/icon/close-search-nav-grey.svg" class="search t2" id="searchNavClose">
+				<span id="globalNav" class="global t2">
+											TH
+                    				</span>
+			</div>
+		</div>
+		<div class="resBox" id="showResMegamenu">
+			<img src="/themes/custom/bdms/assets/icon/hamburger-menu.svg">
+		</div>
+		<div class="resBox" id="hideResMegamenu">
+			<img src="/themes/custom/bdms/assets/icon/close-mobileMenu.svg">
+		</div>
+		<div class="contact">
+			  <div>
+    <div id="block-telephone">
+  
+    
+      
+            <div><div class="phonenumber uppercase"><span class="text-blue">TEL.+662</span> <span class="text-red">310 3000</span></div>
+<div class="localcalls text-blue uppercase TilB">or 1719 (local calls)</div>
+</div>
+      
+  </div>
+
+  </div>
+
+		</div>
+		<div class="resContact" onclick="window.open('tel:1719');">
+			<img src="/themes/custom/bdms/assets/icon/call.svg">
+		</div>
+	</div>
+</nav>
+
+<div class="changeLanguageModal" id="changeLanguageModal">
+	  <div>
+    <div class="language-switcher-language-url" id="block-languageswitcher" role="navigation">
+  
+    
+      <div hreflang="th" data-drupal-link-system-path="node/636" class="th is-active"><div class="box TitSB borderBottom toplang">
+	<font id='lang-select' class="lang"><a href="/th/center/bariatric-surgery/program-check-bmi" class="language-link is-active" hreflang="th" data-drupal-link-system-path="node/636">Thai</a></font></div></div>
+
+  </div>
+
+  </div>
+
+	<div class="bottom TitSB" id="closechangeLanguageModal">
+		<i class="fa fa-times" aria-hidden="true"></i>
+		CLOSE
+	</div>
+</div>
+
+<!-- MEGA MENU -->
+  <div>
+    <div id="block-menu">
+  
+    
+      
+            <div><div class="megamenu" id="megamenu">
+<div class="body">
+<div class="menuLV1" id="menuLV1">
+<!-- DATA OF MENU LV1 WILL BE APPENDED BY JAVASCRIPT
+			FILE : megamenu.js --></div>
+<div class="menuLV2" id="menuLV2">
+<div class="moreButton blue t2"> 
+<div class="text"><a href="/th/centersandclinics">ดูเพิ่ม</a></div>
+</div>
+<!-- DATA OF MENU LV2 WILL BE APPENDED BY JAVASCRIPT
+			FILE : megamenu.js --></div>
+</div>
+<!-- THIS IS A CLOSE BUTTON FOR MEGAMENU --><div class="bottom TitL" id="closeMegamenu">
+<div class="icon"> </div>
+<div class="text">ปิด</div>
+</div>
+</div>
+<script src="/themes/custom/bdms/js/megamenu_devthai23.js"></script></div>
+      
+  </div>
+
+  </div>
+
+
+
+	<div class="resMegamenu" id="resMegamenu">
+		<form block="block-searchformm" action="" method="get" id="search-block-form" accept-charset="UTF-8">
+				<div class="searchBox" style="display: block;">
+					<div class="leftSection" style="display: block;">
+						<input type="text" placeholder="คุณกำลังค้นหาอะไร?" class="TitL" id="indexFindDoctorModalInputMobile">
+					</div>
+					<div class="rightSection" style="display: block;" id="search-front-mob-th">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</div>
+				</div>
+		</form>
+	<script>
+	$(document).ready(function(){
+		$("#search-front-mob-th").click(function(e){
+			e.preventDefault();
+		 // window.location = "http://search.bangkokhospital.com/th/?q="+$('#indexFindDoctorModalInputMobile').val();
+		})
+	});
+	</script>
+
+
+
+        			<div class="box" onclick="$(this).findDoctorModal()">
+
+										<div class="text text-red TitSB uppercase">
+					ค้นหาแพทย์
+					</div>
+									<div class="icon text-red">
+					<i class="fa fa-stethoscope" aria-hidden="true"></i>
+				</div>
+			</div>
+        				<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/makeAppointment.php">
+			<div class="box">
+				<div class="text text-red TitSB uppercase">
+					นัดหมายแพทย์
+				</div>
+				<div class="icon text-red">
+					<i class="fa fa-calendar" aria-hidden="true"></i>
+				</div>
+			</div>
+		</a>
+						<a href="/th/Homepage_Trauma">
+			<div class="box">
+				<div class="text text-red TitSB uppercase">
+					ศูนย์แจ้งเตือน
+				</div>
+				<div class="icon text-red">
+					<i class="fa fa-ambulance" aria-hidden="true"></i>
+				</div>
+			</div>
+		</a>
+						<a href="/th">
+			<div class="box">
+				<div class="text text-blue TitSB uppercase">
+					หน้าหลัก
+				</div>
+				<div class="icon text-blue">
+					<i class="fa fa-home" aria-hidden="true"></i>
+				</div>
+			</div>
+		</a>
+				<div class="box" id="mobileNavDropdown1">
+			<div class="text text-blue TitSB uppercase">
+									ศูนย์รักษาโรค
+							</div>
+			<div class="icon text-blue">
+				<i class="fa fa-caret-down" aria-hidden="true"></i>
+			</div>
+		</div>
+
+		<div class="expand" id="mobileNavExpand1">
+			<div class="menuBox uppercase TitSB">
+				<div class="l">
+									ศูนย์รักษาโรค
+								</div>
+				<div class="r">
+					<i class="fa fa-caret-up" aria-hidden="true"></i>
+				</div>
+			</div>
+
+            										<div class="menuBox uppercase TitSB" onclick="location.href='/th/centersandclinics'">
+					<div class="l">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+						ศูนย์รักษาโรค
+					</div>
+					<div class="r">
+						<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+					</div>
+				</div>
+					
+
+								<div class="menuBox uppercase TitSB" onclick="location.href='/th/node/4391'">
+					<div class="l">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+						เทคโนโลยี
+					</div>
+					<div class="r">
+						<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+					</div>
+				</div>
+				
+									<div class="menuBox uppercase TitSB" onclick="location.href='/th/promotion-package-view'">
+					<div class="l">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+						แพคเกจและโปรโมชั่น
+					</div>
+					<div class="r">
+						<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+					</div>
+				</div>
+				
+								<div class="menuBox uppercase TitSB" onclick="location.href='/th/patient-story-view'">
+					<div class="l">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+						ความประทับใจของผู้ป่วย
+					</div>
+					<div class="r">
+						<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+					</div>
+				</div>
+				
+								<div class="menuBox uppercase TitSB" onclick="location.href='https://bhqdoctors.bdms.co.th/bdms/pages/th/makeAppointment.php'">
+					<div class="l">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+						นัดหมายแพทย์
+					</div>
+					<div class="r">
+						<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+					</div>
+				</div>
+				            
+			</div>
+
+		<div class="box" id="mobileNavDropdown2">
+			<div class="text text-blue TitSB uppercase">
+									ข้อมูลสำหรับผู้ป่วย
+							</div>
+			<div class="icon text-blue">
+				<i class="fa fa-caret-down" aria-hidden="true"></i>
+			</div>
+		</div>
+
+		<div class="expand" id="mobileNavExpand2">
+			<div class="menuBox uppercase TitSB">
+				<div class="l">
+								ข้อมูลสำหรับผู้ป่วย
+								</div>
+				<div class="r">
+					<i class="fa fa-caret-up" aria-hidden="true"></i>
+				</div>
+			</div>
+
+						<div class="menuBox uppercase TitSB" onclick="location.href='/th/Shuttle_Van_Services'">
+				<div class="l">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+					การเตรียมตัวมาโรงพยาบาล
+				</div>
+				<div class="r">
+					<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+				</div>
+			</div>
+			
+						<div class="menuBox uppercase TitSB" onclick="location.href='/th/patient_rooms_and_rates'">
+				<div class="l">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+					ห้องพักผู้ป่วย
+				</div>
+				<div class="r">
+					<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+				</div>
+			</div>
+			
+						<div class="menuBox uppercase TitSB" onclick="location.href='/th/Bangkok_Plaza'">
+				<div class="l">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+					สิ่งอำนวยความสะดวก
+				</div>
+				<div class="r">
+					<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+				</div>
+			</div>
+			
+							<div class="menuBox uppercase TitSB"  onclick="location.href='/th/contactus'">
+				<div class="l">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+					ติดต่อเรา
+				</div>
+				<div class="r">
+					<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+				</div>
+			</div>
+					</div>
+
+        		<div class="box noBorderBottom" id="mobileNavDropdown3">
+			<div class="text text-blue TitSB uppercase">
+									ข้อมูลสุขภาพ
+								</div>
+			<div class="icon text-blue">
+				<i class="fa fa-caret-down" aria-hidden="true"></i>
+			</div>
+		</div>
+
+		<div class="expand" id="mobileNavExpand3">
+			<div class="menuBox uppercase TitSB">
+				<div class="l">
+									ข้อมูลสุขภาพ
+									</div>
+				<div class="r">
+					<i class="fa fa-caret-up" aria-hidden="true"></i>
+				</div>
+			</div>
+
+						<div class="menuBox uppercase TitSB" onclick="location.href='/th/disease-treatment-view'">
+				<div class="l">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+					โรคและการรักษา
+				</div>
+				<div class="r">
+					<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+				</div>
+			</div>
+			
+						<div class="menuBox uppercase TitSB" onclick="location.href='/th/health-trend-tips-view'">
+				<div class="l">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+					เกร็ดความรู้สุขภาพ
+				</div>
+				<div class="r">
+					<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+				</div>
+			</div>
+			
+						<div class="menuBox uppercase TitSB" onclick="location.href='/th/research_education'">
+				<div class="l">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+					การวิจัยและการศึกษา
+				</div>
+				<div class="r">
+					<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+				</div>
+			</div>
+					</div>
+                <div class="box noBorderBottom" id="mobileNavDropdown4">
+			<div class="text text-blue TitSB uppercase">
+									เกี่ยวกับเรา
+							</div>
+			<div class="icon text-blue">
+				<i class="fa fa-caret-down" aria-hidden="true"></i>
+			</div>
+		</div>
+
+		<div class="expand" id="mobileNavExpand4">
+			<div class="menuBox uppercase TitSB">
+				<div class="l">
+									เกี่ยวกับเรา
+								</div>
+				<div class="r">
+					<i class="fa fa-caret-up" aria-hidden="true"></i>
+				</div>
+			</div>
+
+						<div class="menuBox uppercase TitSB" onclick="location.href='/th/our_story'">
+				<div class="l">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+					เกี่ยวกับ รพ. กรุงเทพ
+				</div>
+				<div class="r">
+					<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+				</div>
+			</div>
+			
+						<div class="menuBox uppercase TitSB" onclick="location.href='/th/international-affiliation-view'">
+				<div class="l">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+					ความร่วมมือกับนานาชาติ
+				</div>
+				<div class="r">
+					<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+				</div>
+			</div>
+			
+						<div class="menuBox uppercase TitSB" onclick="location.href='https://www.bangkokhospital.com/index.php/th/patient-support#wattana_card'">
+				<div class="l">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+					บัตรสมาชิกชีววัฒนะ
+				</div>
+				<div class="r">
+					<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+				</div>
+			</div>
+			
+						<div class="menuBox uppercase TitSB" onclick="location.href='http://investor.bangkokhospital.com/th'">
+				<div class="l">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+					นักลงทุนสัมพันธ์
+				</div>
+				<div class="r">
+					<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+				</div>
+			</div>
+					</div>
+
+				<div class="centerBox" onclick="location.href='/th/planguageSelectorromotion-package-view'">
+			<img src="/themes/custom/bdms/assets/icon/cart-grey.svg">
+			ซื้อโปรโมชั่นแพคเกจออนไลน์
+		</div>
+		
+                        
+                                                                                        
+		<script>
+
+
+
+$(document).ready(function(){
+    var langcount = "0";
+    $("#globalNav").click(function(){
+
+        if(langcount != 0){
+            $("[hreflang=zh-hans]").hide();
+        }
+    });
+
+    $(".language-bottom-th").click(function(){
+     var url = window.location.href;
+     if(url.indexOf(" ") > -1){
+            url = window.location.href.replace("/en/", "/th/")
+            window.location = url;
+        }
+    })
+
+    $(".language-bottom-en").click(function(){
+     var url = window.location.href;
+     if(url.indexOf("/th/") > -1){
+            url = window.location.href.replace("/th/", "/en/")
+            window.location = url;
+        }
+    })
+
+    $(".language-bottom-th-zh").click(function(){
+        window.location = "/th";
+    })
+
+    $(".language-bottom-en-zh").click(function(){
+        window.location = "/en";
+    })
+
+    $(".language-bottom-zh").click(function(){
+        window.location = "/zh-hans";
+    })
+
+
+});
+</script>
+
+		<a href="#">
+			<div class="centerBox">
+                					<a href="/en"><font class="language-bottom-en">English</font></a>
+                			</div>
+		</a>
+		<a href="#">
+			<div class="bottom" id="closeBottomResNav">
+				<i class="fa fa-times" aria-hidden="true"></i>
+									ปิด
+							</div>
+		</a>
+	</div>
+<script src="/themes/custom/bdms/js/categoryIcon.js"></script>
+
+
+<script>
+jQuery(document).ready(function($){
+
+// Removes bottom margin of <p> wrapper that gets inserted around images with caption class
+	$('p .image-caption-container').each(function() {
+		// Make this code do what you want.
+		$(this).parent().css('margin-bottom', '0px');
+	});
+
+});
+</script>
+<body class="thai">
+
+	
+<!-- headBanner -->
+		<div class="headBanner">
+
+        
+		<div class="bannerImage">
+		<style>
+		div > div > div > p > img {
+		width:100%;
+		}
+		p {
+		padding-left:0px;
+		padding-right:0px;
+		}
+		</style>
+			  <div>
+    <div class="views-element-container" id="block-views-block-main-center-banner-landing-page-block-2">
+  
+    
+      <div block="block-views-block-main-center-banner-landing-page-block-2"><div class="js-view-dom-id-3dcef74bf5273c2d5d4b97f5e83662326174a6f34ce7d21b6b9e2e42892756d8">
+  
+  
+  
+
+  
+  
+  
+
+      <div class="views-row"><p><img src="/sites/default/files/Center%20Banner/BC-Bariatric-Surgery.png" width="100%"></p></div>
+
+  
+  
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+		</div>
+	</div>
+    
+    	<div class="clinicDetailContainer">
+	<div class="flex1">
+
+			  <div>
+    <div class="views-element-container" id="block-views-block-sidebar-title-for-clinic-and-center-block-1">
+  
+    
+      <div block="block-views-block-sidebar-title-for-clinic-and-center-block-1"><div class="js-view-dom-id-aab11a666af2346070faf42d3895a9700c678e1619e4dfbce5498e8e8466d17a">
+  
+  
+  
+
+  
+  
+  
+
+      <div class="views-row"><div class="views-field views-field-term-node-tid"><span class="field-content"><div class="subLevel">
+<h2 class="uppercase"><font color="#0072BB">ศูนย์ผ่าตัดและรักษาโรคอ้วน</font></h2>
+</div></span></div></div>
+
+  
+  
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+			  <div>
+    <div class="views-element-container" id="block-views-block-center-and-clinic-sidebar-detail-block-2">
+  
+    
+      <div block="block-views-block-center-and-clinic-sidebar-detail-block-2">
+<div class="subLevel">
+
+
+      
+        <div class="subLevelBox">
+            <font color="#0072BB"><a href="/th/bariatric_surgery_tab">ข้อมูลศูนย์</a> </font>
+            <img src="/themes/custom/bdms/assets/img/arrow.png" />
+        </div>
+            
+                    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <div class="subLevelBox">
+            <font color="#0072BB"><a href="/th/center/bariatric-surgery/program-check-bmi">โปรแกรมคำนวณหาค่าดัชนีมวลกาย (BMI) </a> </font>
+            <img src="/themes/custom/bdms/assets/img/arrow.png" />
+        </div>
+    
+                <div class="subLevelBox">
+            <font color="#0072BB"><a href="/th/center/bariatric/surgery">การผ่าตัดกระเพาะ </a> </font>
+            <img src="/themes/custom/bdms/assets/img/arrow.png" />
+        </div>
+    
+    
+
+   <!--  <div class="subLevelBox t1">
+        <a href="/th/health-trend-tips-view?center=1511&type_1=1&items_per_page=10">
+            <font color="#0072BB">
+                                    ข้อมูลสุขภาพ
+                            </font>
+        </a>
+        <img src="/themes/custom/bdms/assets/img/arrow.png" />
+    </div> -->
+
+    <div class="subLevelBox t1">
+        <a href="/th/disease-treatment-view?center=1511&type_1=1&items_per_page=10">
+            <font color="#0072BB">
+                                    โรคและเทคนิคการรักษา
+                            </font>
+        </a>
+        <img src="/themes/custom/bdms/assets/img/arrow.png" />
+    </div>
+
+    <div class="subLevelBox t1">
+        <a href="/th/disease-treatment-view?center=1511&type_1=2&items_per_page=10">
+            <font color="#0072BB">
+                                    วิดีโอ
+                            </font>
+        </a>
+        <img src="/themes/custom/bdms/assets/img/arrow.png" />
+    </div>
+
+
+</div>
+
+<div class="subLevelMobile">
+    <div class="dropDownArrow">&nbsp;</div>
+
+    <select class="uppercase TitSB" onchange="location = this.value;" >
+                                    <option value="/th/node/626">
+                    <a href="/th/bariatric_surgery_tab">ข้อมูลศูนย์</a>
+                </option>
+                                                                                                                                                                                                                                                        <option value="/th/node/636">
+                    <a href="/th/center/bariatric-surgery/program-check-bmi">โปรแกรมคำนวณหาค่าดัชนีมวลกาย (BMI) </a>
+                </option>
+                                                <option value="/th/node/631">
+                    <a href="/th/center/bariatric/surgery">การผ่าตัดกระเพาะ </a>
+                </option>
+                                        <!-- <option value="/th/health-trend-tips-view?center=1511&type_1=1&items_per_page=10">
+                                    ข้อมูลสุขภาพ
+                            </option> -->
+            <option value="/th/disease-treatment-view?center=1511&type_1=1&items_per_page=10">
+                                    โรคและเทคนิคการรักษา
+                            </option>
+            <option value="/th/disease-treatment-view?center=1511&type_1=2&items_per_page=10">
+                                    วิดีโอ
+                            </option>
+            </select>
+</div>
+
+</div>
+
+  </div>
+
+  </div>
+
+
+			<div class="buttonZone">
+
+
+										<a href="https://bhqdoctors.bdms.co.th/bdms/pages/th/makeAppointment.php">
+					<button class="blue t2">
+					<div class="icon" style="color:white;">
+						<i class="fa fa-stethoscope" aria-hidden="true"></i>
+					</div>
+					<div class="text">
+						นัดหมายแพทย์
+					</div></button></a>
+				   
+				<!--onclick="$(this).findDoctorModal()"-->
+
+										<button class="red t2" onclick="$(this).findDoctorModal()">
+					<div class="icon" style="color:white;">
+						<i class="fa fa-calendar" aria-hidden="true"></i>
+					</div>
+					<div class="text">
+						ค้นหาแพทย์
+					</div>
+					</button>
+					
+                                                  <div>
+    <div class="views-element-container" id="block-views-block-related-doctor-sidebar-block-1">
+  
+    
+      <div block="block-views-block-related-doctor-sidebar-block-1"><div class="js-view-dom-id-f85a9794cb4dc9345cefda26aeef4f3869b23360cdf182cde37a24b1746a6a72">
+  
+  
+  
+
+  
+  
+  
+
+      <div class="views-row"><div class="views-field views-field-term-node-tid"><span class="field-content"><input name="center_clinic_id" type="hidden" value="1511">
+
+<div class="doctorBoxDesktop">
+    <div class="api-doctor">
+
+    </div>
+</div>
+
+<div class="doctorBoxMobile">
+    <div id="doctorBoxMobileRight">
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+    </div>
+    <div id="doctorBoxMobileLeft">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+    </div>
+    <section class="doctorBoxMobileSlider">
+
+    </section>
+</div>
+
+
+
+</span></div></div>
+
+  
+  
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+				
+			
+			</div>
+
+            										  <div>
+    <div class="views-element-container" id="block-views-block-related-doctor-more-button-block-1">
+  
+    
+      <div block="block-views-block-related-doctor-more-button-block-1"><div class="js-view-dom-id-92b917eeac4ea7cbb8f561eab113f57b979c2f4f2f07010afe1c802e38f5b9fb">
+  
+  
+  
+
+  
+  
+  
+
+      <div class="views-row"><div class="views-field views-field-term-node-tid"><span class="field-content">
+
+<a class= "docter_more_link" href="#">
+    <div class="moreButton static blue t2 fullOnMobile" style="display: none;">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+        <div class="text">MORE</div>
+    </div>
+</a>
+
+<script>
+
+    var doctorProfileCategory = {
+        1336 : 'Child Wellness',
+        1341 : 'Female Wellness',
+        1346 : 'Male Wellness',
+        1356 : 'Aesthetic and Anti-Aging',
+        1361 : 'Bone and Spine',
+        1366 : 'Brain',
+        1371 : 'Cancer',
+        1376 : 'Respiratory system',
+        1381 : 'Dental Care',
+        1386 : 'Trauma Center',
+        1391 : 'EYE and ENT',
+        1396 : 'Geriatric and Rehabilitation',
+        1401 : 'GI and Liver',
+        1406 : 'Heart',
+        1411 : 'International Medical Services',
+        1416 : 'Internal Medicines',
+        1421 : 'Mother and Child',
+        1426 : 'Occupational Health',
+        1431 : 'Recovery and Rehabilitation',
+        1436 : 'Surgery',
+        1441 : 'Good Health'
+    };
+
+
+
+    var url = '/'+'th'+'/all-doctor?center_clinic_id='+ '1511' +'&name=' + 'ศูนย์ผ่าตัดและรักษาโรคอ้วน' ;
+    $(".docter_more_link").attr('href',url);
+
+
+    var lang = 'th';
+    var center_clinic_id = $("input[name='center_clinic_id']").val();
+
+
+    var doctorProfileItem = {
+        1476 : '',
+        1481 : 'Child Development Neuropsychiatric Clinic (CDNC)',
+        1486 : 'Hematology Center',
+        1491 : 'Bangkok Child Health Center',
+        1511 : '',
+        1516 : 'Bangkok Urological Center',
+        1536 : 'Bangkok Plastic & Reconstructive Surgery  Center',
+        1541 : 'Bangkok Skin & Aesthetics Center',
+        1546 : 'Bangkok Royal Life Anti-Aging Center',
+        1551 : 'Bangkok Hyperbaric Oxygen Therapy Center (HBO)',
+        1556 : 'Bangkok Spine Academy',
+        1561 : 'Bangkok Academy of Sports and Exercises Medicine',
+        1566 : 'Bangkok Orthopedic Center',
+        1571 : '',
+        1576 : 'Bangkok Hip & Knee Center',
+        1581 : 'Bangkok Rehabilitation Center',
+        1591 : '',
+        1596 : 'Bangkok Neurological Surgery Center',
+        1601 : 'Bangkok Mental Health Rehabilitation and Recovery Center (BMRC)',
+        1606 : 'Bangkok Longevity Center',
+        1611 : 'Bangkok Allergy & Asthma Center',
+        1616 : 'Bangkok Chest & Respiratory Center',
+        1626 : 'Bangkok Ear Nose Throat Center',
+        1631 : 'Bangkok Dental Center',
+        1636 : '',
+        1641 : 'Bangkok Trauma Center',
+        1646 : 'Bangkok Referral Center',
+        1651 : '',
+        1656 : 'Bangkok Eye Center',
+        1661 : 'Bangkok Lasik Center',
+        1666 : 'Hearing Speech Balance & Tinnitus Center',
+        1691 : 'Bangkok GI & Liver Center',
+        1696 : 'International Medical Services',
+        1701 : 'Japanese Medical Services',
+        1706 : 'Arabic Medical Services',
+        1711 : '',
+        1716 : '',
+        1721 : '',
+        1726 : '',
+        1731 : '',
+        1736 : 'Bangkok Diabetes, Thyroid and Endocrine Center',
+        1746 : 'Women’s Health Center',
+        1756 : 'Bangkok Fertility Center',
+        1761 : '',
+        1771 : 'Surgery Clinic ',
+        1781 : 'Bangkok Health Promotion Center',
+        1786 : 'Civil Aeromedical Center',
+        1791 : 'Bangkok Kidney Center',
+        1796 : 'Arthritis & Rheumatic Clinic',
+        1801 : 'Headache Clinic',
+        1806 : 'Epilepsy clinic',
+        1811 : 'Parkinson Clinic',
+        1816 : 'Memory Clinic',
+        1821 : 'Stroke Clinic',
+        1826 : 'Special Clinic',
+        1831 : '',
+        1836 : '',
+        1841 : '',
+        1846 : '',
+        1851 : '',
+        1856 : '',
+        1861 : '',
+        1881 : 'Travel Medicine Clinic',
+        1886 : 'Internal Medicine Clinic',
+        1891 : '',
+        1896 : '',
+        1901 : 'Night Clinic',
+        1906 : 'Wound Care Clinic',
+        1911 : '',
+        1916 : 'Bangkok Skin & Aesthetics Center',
+        1921 : 'Bangkok Neuroscience Center',
+        2011 : 'Bangkok Endoscopic Center',
+        2016 : ''
+    };
+
+    var doctorProfileName = doctorProfileItem[center_clinic_id];
+
+    if(doctorProfileName != '') {
+
+        $.ajax({
+            type: 'GET',
+            url: 'https://bhqdoctors.bdms.co.th/bdms/admin/doctor/list_doctor_API?location='+doctorProfileName,
+            dataType: 'json',
+            async: false,
+            success: function(json) {
+
+                if ( json.length != 0 ) {
+                    $('.moreButton').show();
+                }
+
+
+                $.each(json, function (i, item) {
+
+                    if (lang == 'en') {
+                        var name = item.PROFILE_NAME_ENG;
+                    } else {
+                        var name = item.PROFILE_NAME_THA;
+                    }
+
+
+                    $('.api-doctor').append(' <a class="doctorBox" href="' + item['URL'] + '">' +
+                        '  <div class="image">' +
+                        '            <img src="' + item.PROFILE_PHOTO + '">' +
+                        '   </div>' +
+                        '        <div class="text">' +
+                        '            <div class="textCon">' +
+                        '                <div class="name">' +
+                        name +
+                        '                </div>' +
+                        '                <div class="specialty">' +
+
+                        '                </div>' +
+                        '                <div class="subSpecialty">' +
+                        '                    ' +
+                        '                </div>' +
+                        '                <div class="subSpecialty">' +
+                        '                    ' +
+                        '                </div>' +
+                        '            </div>' +
+                        '        </div>' +
+                        '  </a>');
+
+
+                    $('.doctorBoxMobileSlider').append('<a class="doctorBox" href="' + item['URL'] + '">' +
+                        '        <div class="image">' +
+                        '            <img src="' + item.PROFILE_PHOTO + '">' +
+                        '        </div>' +
+                        '        <div class="text">' +
+                        '            <div class="textCon">' +
+                        '                <div class="name">' +
+                        name +
+                        '                </div>' +
+                        '                <div class="specialty">' +
+
+                        '                </div>' +
+                        '                <div class="subSpecialty">' +
+                        '                   ' +
+                        '                </div>' +
+                        '                <div class="subSpecialty">' +
+                        '                    ' +
+                        '                </div>' +
+                        '            </div>' +
+                        '        </div>' +
+                        '    </a>');
+                });
+            }
+        });
+
+    }
+
+
+</script></span></div></div>
+
+  
+  
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+				            
+
+	</div>
+
+
+	<article class="flex2 mb-4 container pr-md-4 pr-lg-5 thai" style="margin-top:-12px;">
+			<p class="padding-right">
+
+
+              <style type="text/css">
+
+.pg-normal {
+color: blue;
+font-size: 15px;
+cursor: pointer;
+background: #fff;
+
+}
+
+.pg-selected {
+color: #0066cc;
+font-size: 16px;
+background: #fff;
+border: 1px solid #0066cc;
+ height: 30px;
+ width: 30px;
+ -moz-border-radius:15px;
+ -webkit-border-radius: 15px;
+ border-radius:100%;
+ padding:5px;
+}
+
+
+</style>
+<script type="text/javascript">
+
+function Pager(tableName, itemsPerPage) {
+
+this.tableName = tableName;
+
+this.itemsPerPage = itemsPerPage;
+
+this.currentPage = 1;
+
+this.pages = 0;
+
+this.inited = false;
+
+this.showRecords = function(from, to) {
+
+var rows = document.getElementById(tableName).rows;
+
+// i starts from 1 to skip table header row
+
+for (var i = 1; i < rows.length; i++) {
+
+if (i < from || i > to)
+
+rows[i].style.display = 'none';
+
+else
+
+rows[i].style.display = '';
+
+}
+
+}
+
+this.showPage = function(pageNumber) {
+
+if (! this.inited) {
+
+alert("not inited");
+
+return;
+
+}
+
+var oldPageAnchor = document.getElementById('pg'+this.currentPage);
+
+oldPageAnchor.className = 'pg-normal';
+
+this.currentPage = pageNumber;
+
+var newPageAnchor = document.getElementById('pg'+this.currentPage);
+
+newPageAnchor.className = 'pg-selected';
+
+var from = (pageNumber - 1) * itemsPerPage + 1;
+
+var to = from + itemsPerPage - 1;
+
+this.showRecords(from, to);
+
+}
+
+this.prev = function() {
+
+if (this.currentPage > 1)
+
+this.showPage(this.currentPage - 1);
+
+}
+
+this.next = function() {
+
+if (this.currentPage < this.pages) {
+
+this.showPage(this.currentPage + 1);
+
+}
+
+}
+
+this.init = function() {
+
+var rows = document.getElementById(tableName).rows;
+
+var records = (rows.length - 1);
+
+this.pages = Math.ceil(records / itemsPerPage);
+
+this.inited = true;
+
+}
+
+this.showPageNav = function(pagerName, positionId) {
+
+if (! this.inited) {
+
+alert("not inited");
+
+return;
+
+}
+
+var element = document.getElementById(positionId);
+
+var pagerHtml = '<span onclick="' + pagerName + '.prev();" class="pg-normal"> « Prev </span> ';
+
+for (var page = 1; page <= this.pages; page++)
+
+pagerHtml += '<span id="pg' + page + '" class="pg-normal" onclick="' + pagerName + '.showPage(' + page + ');">' + page + '</span> ';
+
+pagerHtml += '<span onclick="'+pagerName+'.next();" class="pg-normal"> Next »</span>';
+
+element.innerHTML = pagerHtml;
+
+}
+
+}
+
+</script>
+			   			   <style>
+			   .clinicDetailContainer .flex2 ul {
+			   list-style-image: url('/themes/custom/bdms/assets/icon/angleBullet.svg');
+		       padding-left:0;
+	    	   font-size: 1.5rem;
+			   list-style-position: outside;
+			   font-family: TitL;;
+			  }
+			  .clinicDetailContainer .flex2 ol {
+			  list-style-position: outside;
+			  font-size: 1.5rem;
+			  font-family: Paethai !important;
+			  }
+			   .clinicDetailContainer .flex2 li {
+			   margin-left:20px;
+			   font-family: Paethai !important;
+			   font-size: 1.5rem;
+			   }
+			   img {
+				display: inline-block;
+
+				}
+				.clinicDetailContainer .flex2 img {
+                padding-right: 10px;
+                padding-left: 5px;
+
+            }
+			@media only screen and (max-width: 786px) {
+			.clinicDetailContainer .flex2 img {
+                padding-right: 10px;
+                padding-left: 5px; }
+
+			.clinicDetailContainer .flex2 {
+                padding-right: 15px;
+                padding-left: -10px;
+				}
+				}
+
+			   </style>
+			   				  <div>
+    <div id="block-bdms-page-title">
+  
+    
+      
+  <h1><span><b style="color: #0072BB;"> โปรแกรมคำนวณหาค่าดัชนีมวลกาย (BMI) </b></span>
+</h1>
+
+
+  </div>
+<div id="block-bdms-content">
+  
+    
+      <article data-history-node-id="636" role="article" about="/th/center/bariatric-surgery/program-check-bmi">
+
+  
+    
+
+  
+  <div>
+    
+            <div><p> </p>
+<script language="JavaScript">
+
+
+function calculateBmi() {
+var weight = document.bmiForm.weight.value
+var height = document.bmiForm.height.value
+if(weight > 0 && height > 0){	
+var finalBmi = weight/(height/100*height/100)
+document.bmiForm.bmi.value = finalBmi
+if(finalBmi < 18.5){
+document.bmiForm.meaning.value = "น้ำหนักน้อย / ผอม"
+}
+if(finalBmi > 18.5 && finalBmi < 25){
+document.bmiForm.meaning.value = "ปกติ (สุขภาพดี)"
+}
+if(finalBmi > 25){
+document.bmiForm.meaning.value = "น้ำหนักเกิน / อ้วน"
+}
+}
+else{
+alert("กรุณากรอกข้อมูลให้ครบ")
+}
+}
+
+
+//--><!]]]]]]><![CDATA[><![CDATA[>
+
+//--><!]]]]><![CDATA[>
+
+//--><!]]>
+</script><form id="bmiForm" name="bmiForm">
+<p> </p>
+<table border="0" cellpadding="0" cellspacing="o" style="width: 100%;"><tbody><tr><td class="text-align-center" colspan="2">
+<h2>โปรแกรมคำนวณหาค่าดัชนีมวลกาย (BMI)</h2>
+</td>
+</tr><tr><td class="text-align-right"> </td>
+<td> </td>
+</tr><tr><td class="text-align-right">
+<p><strong>น้ำหนัก : </strong></p>
+</td>
+<td>
+<p>
+<input name="weight" size="25" type="text" /> <strong>กิโลกรัม</strong></p>
+</td>
+</tr><tr><td class="text-align-right">
+<p><strong>ส่วนสูง : </strong></p>
+</td>
+<td>
+<p>
+<input name="height" size="25" type="text" /> <strong>เซนติเมตร</strong></p>
+</td>
+</tr><tr><td> </td>
+<td>
+<p>
+<input onclick="calculateBmi()" type="button" value="คำนวณ" /></p>
+</td>
+</tr><tr><td class="text-align-right">
+<p><strong>ค่าที่ได้ : </strong></p>
+</td>
+<td>
+<p>
+<input disabled="disabled" name="bmi" size="25" type="text" /></p>
+</td>
+</tr><tr><td class="text-align-right">
+<p><strong>คุณอยู่ในเกณฑ์ : </strong></p>
+</td>
+<td>
+<p>
+<input disabled="disabled" name="meaning" size="25" type="text" /></p>
+</td>
+</tr><tr><td> </td>
+<td>
+<p>
+<input type="reset" value="เคลียร์ข้อมูล" /></p>
+</td>
+</tr></tbody></table></form>
+<p> </p>
+<p><strong>คุณเป็นโรค “อ้วน” หรือไม่?</strong></p>
+<p dir="ltr"><strong>น้ำหนักที่เพิ่มขึ้น อ้วนลงพุง แขนขาใหญ่ อาจไม่ใช่เกณฑ์ว่าคุณเป็น ‘โรคอ้วน’  เพราะคนอ้วนทุกคนไม่ใช่คนป่วย แต่ผู้ที่มีค่าดัชนีมวลกายและมีปริมาณไขมันสะสมในร่างกายเกินมาตรฐาน ร่วมกับมีโรคแทรกซ้อน* เช่น เบาหวาน ไขมันในเลือดสูง ความดันโลหิตสูง น้ำตาลในเลือดสูง โรคหลอดเลือดหัวใจ นอนกรน ภาวะหยุดหายใจขณะหลับ ภาวะปอดทำงานผิดปกติ หลอดเลือดสมองขาดเลือด ข้อเข่าเสื่อม โรคถุงน้ำดี ไขมันพอกตับ เป็นต้น ถือว่าคุณมีภาวะผิดปกติ เป็น “โรคอ้วน Obesity”</strong></p>
+<p dir="ltr">1. ดัชนีมวลกาย (Body Mass Index: BMI)</p>
+<p dir="ltr">วิธีการคำนวณ คือ BMI = น้ำหนัก (กิโลกรัม) / ส่วนสูง2 (เมตร)</p>
+<p><img alt="photo" data-entity-type="file" data-entity-uuid="6554aab5-74fe-4a07-a3ac-627ff81d356a" src="/sites/default/files/inline-images/bariatric-bni-insert-01_0.png" class="align-center" /></p>
+<p dir="ltr">2. ปริมาณไขมันสะสมในร่างกาย</p>
+<p dir="ltr">โดยใช้เครื่อง Body Composition Evaluation</p>
+<p><img alt="photo" data-entity-type="file" data-entity-uuid="53e09afd-2ec0-48a1-94ec-68e265fc1620" src="/sites/default/files/inline-images/bariatric-bni-insert-02_0.png" class="align-center" /><img alt="photo" data-entity-type="file" data-entity-uuid="ec541246-4825-4e7f-b793-0a8dc76d46d4" src="/sites/default/files/inline-images/bmi-test-web_0.png" class="align-center" /></p>
+<p dir="ltr"><strong>อ้วนแค่ไหน? อาจต้องผ่าตัด</strong></p>
+<p dir="ltr">ข้อบ่งชี้ว่าคุณมีภาวะผิดปกติเป็น ‘โรคอ้วน’ ควรได้รับการรักษาด้วยการผ่าตัด </p>
+<p dir="ltr">ดัชนีมวลกาย (Body Mass Index : BMI)</p>
+<p><img alt="photo" data-entity-type="file" data-entity-uuid="02f18773-685e-46bb-88fd-f6df6f331533" src="/sites/default/files/inline-images/bariatric-bni-insert-03_0.png" class="align-center" /></p>
+<hr /><p dir="ltr">สอบถามเพิ่มเติม <strong>ศูนย์ผ่าตัดและรักษาโรคอ้วน  โรงพยาบาลกรุงเทพ</strong></p>
+<p dir="ltr">ชั้น 1 อาคาร D โรงพยาบาลกรุงเทพ</p>
+<p dir="ltr">เปิดบริการ <strong>8.00 น. - 20.00 น.</strong>  </p>
+<p dir="ltr">โทร. <strong>02 310 3002</strong> หรือ โทร <strong>1719</strong></p>
+<p dir="ltr">อีเมล: <a href="/cdn-cgi/l/email-protection#c7aea9a1a887a5a6a9a0aca8acafa8b4b7aeb3a6abe9a4a8aa"><span class="__cf_email__" data-cfemail="b3daddd5dcf3d1d2ddd4d8dcd8dbdcc0c3dac7d2df9dd0dcde">[email&#160;protected]</span></a></p>
+<hr /></div>
+      
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+				
+
+
+
+			</article>
+	</div>
+
+
+    
+
+
+<div class="myModalBackground"></div>
+
+
+    
+                      <div>
+    
+  </div>
+
+    
+<footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+$(document).ready(function(){
+
+    $(".language-bottom-th").click(function(){
+     var url = window.location.href;
+     if(url.indexOf("/en/") > -1){
+            url = window.location.href.replace("/en/", "/th/")
+            window.location = url;
+        }
+    });
+
+    $(".language-bottom-en").click(function(){
+     var url = window.location.href;
+     if(url.indexOf("/th/") > -1){
+            url = window.location.href.replace("/th/", "/en/")
+            window.location = url;
+        }
+    });
+
+    $(".language-bottom-th-zh").click(function(){
+        window.location = "/th";
+    })
+
+    $(".language-bottom-en-zh").click(function(){
+        window.location = "/en";
+    })
+
+    $(".language-bottom-zh").click(function(){
+        window.location = "/zh-hans";
+    })
+});
+</script>
+<script>
+$(document).ready(function(){
+
+    $(".language-bottom-th-mob").click(function(){
+     var url = window.location.href;
+     if(url.indexOf("/en/") > -1){
+            url = window.location.href.replace("/en/", "/th/")
+            window.location = url;
+        }
+    });
+
+    $(".language-bottom-en-mob").click(function(){
+     var url = window.location.href;
+     if(url.indexOf("/th/") > -1){
+            url = window.location.href.replace("/th/", "/en/")
+            window.location = url;
+        }
+    });
+});
+</script>
+
+		<div class="shapePolygon" id="footerShapePolygon">
+			<div class="shapeTop">
+				<div class="front"> 						<div class="mobileContent only-mobile TitSB">
+						<i class="fa fa-caret-down" aria-hidden="true"></i>
+						<select class="uppercase TitSB" onchange="location = this.value;">
+						<option value="#">เมนู</option><option value="#">เกี่ยวกับเรา</option>
+						<option value="http://investor.bangkokhospital.com/th" target="_blank">นักลงทุนสัมพันธ์</option>
+						<option value="https://www.bangkokhospital.com/index.php/th/center-of-excellence#coc_award_xs">รางวัลและการรับรอง</option>
+						<option value="https://www.bangkokhospital.com/index.php/th/corporate#corporate_jobopportunities">โอกาสในการทำงาน</option>
+						<option value="/th/contactus">เกี่ยวกับเรา</option>
+						<option value="#">ผู้เชี่ยวชาญด้านสุขภาพ</option>
+						<option value="/th/dise	ase-treatment-view">โรคและการรักษา</option>
+						<option value="/th/health-trend-tips-view">เกร็ดความรู้สุขภาพ </option>
+						<option value="/th/research_education">งานวิจัยและการศึกษา</option>
+						</select>
+						</div>
+										<div class="socialIcon">
+
+                   															<a href="https://www.facebook.com/BangkokHospital/" target="_blank">
+									<img src='/themes/custom/bdms/assets/icon/social/facebook.svg'>
+															<a href="https://www.youtube.com/user/bangkokhospital/" target="_blank">
+									<img src='/themes/custom/bdms/assets/icon/social/youtube.svg'>
+								</a>
+								<a href="https://twitter.com/BangkokHospital" target="_blank">
+									<img src='/themes/custom/bdms/assets/icon/social/twitter.svg'>
+								</a>
+								<a href="https://www.instagram.com/bangkokhospital/" target="_blank">
+									<img src='/themes/custom/bdms/assets/icon/social/instagram.svg'>
+								</a>
+					
+					</div>
+				</div>
+				<div class="back">
+					<img src="/themes/custom/bdms/assets/img/footer_shapeTop.svg" class="gradientForDesktop">
+					<img src="/themes/custom/bdms/assets/img/footer_shapeTop_tablet.svg" class="gradientForTablet">
+				</div>
+			</div>
+			<div class="shapeBottom">
+				<div class="mobileContent only-mobile TitL languageSelector">
+										<span class="box active TitSB language-bottom-th">Thai</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<span class="box TitSB language-bottom-en">English</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<span class="box TitSB language-bottom-zh">中文</span>
+								</div>
+				<div class="content">
+					<div class="flexBox">
+					  <div>
+    <div id="block-footertop1">
+  
+    
+      
+            <div><h2 class="TitSB">โรงพยาบาลกรุงเทพ</h2>
+<div>
+<a class="uppercase" href="/th/Map_direction">
+<div class="direction btn">
+<div class="l"><font color="white"><span class="fa fa-map-marker" aria-hidden="true" style="margin-right: 7px;"></span><font class="TitSB">ขอเส้นทาง</font> </font></div>
+<div class="r"><font color="white"><span class="fa fa-arrow-circle-right" aria-hidden="true"></span></font></div>
+</div>
+<p></p></a>
+</div>
+</div>
+      
+  </div>
+
+  </div>
+
+					  <div>
+    <div id="block-footertop1direction">
+  
+    
+      
+            <div><p class="TitSB">2 ซอยศูนย์วิจัย 7,<br />
+ถนนเพชรบุรีตัดใหม่, ห้วยขวาง, กรุงเทพ 10310 ประเทศไทย</p>
+</div>
+      
+  </div>
+
+  </div>
+
+					  <div>
+    <div id="block-footertop1address">
+  
+    
+      
+            <div><p><a href="/cdn-cgi/l/email-protection#71181f171e3113101f161a1e1a191e02011805101d5f121e1c"><span class="__cf_email__" data-cfemail="7d14131b123d1f1c131a16121615120e0d14091c11531e1210">[email&#160;protected]</span></a></p>
+</div>
+      
+  </div>
+
+  </div>
+
+					</div>
+					<div class="flexBox">
+						  <div>
+    <div id="block-footertop2">
+  
+    
+      
+            <div><div>
+<h2 class="TitSB">เกี่ยวกับเรา</h2>
+<p class="TitL"><a class="TitSB" href="http://investor.bangkokhospital.com/th" target="_blank">นักลงทุนสัมพันธ์</a><br /><a class="TitSB" href="/th/accreditations-and-awards-view">รางวัลและการรับรอง</a><br /><a class="TitSB" href="/th/news-and-event-view">ข่าวสารและกิจกรรม</a><br /><a class="TitSB" href="/th/job-opportunity" target="_blank">โอกาสในการทำงาน</a><br /><a class="TitSB" href="/th/our_story">เกี่ยวกับเรา</a></p>
+</div>
+</div>
+      
+  </div>
+
+  </div>
+
+					</div>
+					<div class="flexBox">
+						  <div>
+    <div id="block-footertop3">
+  
+    
+      
+            <div><div>
+<h2 class="TitSB">ผู้เชี่ยวชาญด้านสุขภาพ</h2>
+<p class="TitL"><strong><a href="https://www.chivatransitionalcare.com/">ดูแล ฟื้นฟู สุขภาพหลังภาวะวิกฤติ</a></strong><br /><a class="TitSB" href="/th/disease-treatment-view">โรคและการรักษา</a><br /><a class="TitSB" href="/th/health-trend-tips-view">เคล็ดลับสุขภาพดี</a><br /><a class="TitSB" href="http://www.bangkokhealth.com/" target="_blank">งานวิจัยและการศึกษา</a><br /><a class="TitSB" href="http://www.bangkokmedjournal.com/" target="_blank">วารสารการแพทย์กรุงเทพ</a></p>
+</div>
+</div>
+      
+  </div>
+
+  </div>
+
+					</div>
+				</div>
+				<div class="content">
+					<div class="flexBox">
+					  <div>
+    <div id="block-footertop4">
+  
+    
+      
+            <div><h2 class="TitSB">ศูนย์ความเป็นเลิศ</h2>
+<p><a class="TitSB" href="https://www.bangkokhospital.com/hearthospital/th" target="_blank">หัวใจ</a> <a class="TitSB" href="https://www.bangkokhospital.com/wattanosoth/web/th/site/index" target="_blank">มะเร็ง</a> <a class="TitSB" href="/th/homepage_bone">กระดูกและข้อ</a> <a class="TitSB" href="/th/brain">สมอง</a> <a class="TitSB" href="/th/Homepage_Trauma">ศูนย์อุบัติเหตุกรุงเทพ</a> <a class="TitSB" href="/th/Homepage_Dental">ทันตกรรม</a></p>
+</div>
+      
+  </div>
+
+  </div>
+
+					</div>
+					<div class="flexBox">
+					  <div>
+    <div id="block-footertop5">
+  
+    
+      
+            <div><h2 class="TitSB">บริการผู้ป่วย</h2>
+<p><a class="TitSB" href="https://bhqdoctors.bdms.co.th/bdms/pages/th/searchResult.php">ค้นหาแพทย์</a><br /><a class="TitSB" href="https://bhqdoctors.bdms.co.th/bdms/pages/th/makeAppointment.php" target="_blank">นัดหมายแพทย์</a><br /><a class="TitSB" href="/th/promotion-package-view">แพคเกจและโปรโมชั่น</a><br /><a class="TitSB" href="/th/Map_direction">ค้นหาเครือข่ายโรงพยาบาล</a><br /><a class="TitSB" href="/th/Shuttle_Van_Services">บริการรถโดยสาร</a></p>
+<p> </p>
+</div>
+      
+  </div>
+
+  </div>
+
+					</div>
+					<div class="flexBox">
+						  <div>
+    <div id="block-footertop6">
+  
+    
+      
+            <div><div>
+<div id="block-footerlinksuggestions">
+<div class="layout layout--onecol">
+<div class="layout__region layout__region--content">
+<h2 class="TitSB">ลิงค์แนะนำ</h2>
+<p class="TitL"><a class="TitSB" href="/th/Minimally_Invasive_Surgery">ผ่าตัดผ่านกล้องแผลเล็ก</a><br /><a class="TitSB" href="/th/Stroke">โรคหลอดเลือดสมองตีบ</a><br /><a class="TitSB" href="/th/6th_Anniversary_FIFA_Medical">มาตรฐานทางการแพทย์ระดับฟีฟ่า</a><br /><a class="TitSB" href="/th/HAND%26MICROSURGERY">โรคทางมือบาดเจ็บรักษาได้ </a><br /><a class="TitSB" href="/th/Injury_to_the_joints">บาดเจ็บบริเวณข้อต่อ อย่ารีรอรีบรักษา</a><br /><a class="TitSB" href="/th/Thyroid_Surgery_Technique">ผ่าตัดไทรอยด์ผ่านกล้องทางช่องปาก</a></p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+      
+  </div>
+
+  </div>
+
+					</div>
+				</div>
+				<div class="tabletContent only-tablet">
+					
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+$(document).ready(function(){
+    $("#searchResultBox").keydown(function(e) { //when
+        var code = e.keyCode || e.which;
+        if (code == 13) { //13=enter
+            e.preventDefault();
+
+     // window.location = "http://search.bangkokhospital.com/en/?q="+$('#searchResultBox').val();
+ 		}
+    });
+});
+</script>
+					<div class="box">
+						<div class="languageSelector TitL">
+												    <span class="resBox active TitSB language-bottom-th-mob">Thai</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<span class="resBox TitSB language-bottom-en-mob">English</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<span class="resBox TitSB language-bottom-en-mob">中文</span>
+												</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<div class="languageSelector TitSB only-desktop">
+        			<span class="box active TitSB language-bottom-th language-bottom-th-home">Thai</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<span class="box TitSB language-bottom-en language-bottom-en-home" onclick="location.href = '/en'">English</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<span class="box TitSB language-bottom-zh language-bottom-zh-home" onclick="location.href = '/zh-hans'">中文</span>
+        	</div>
+
+		<div class="bottom">
+		            <h3 class="TitSB">
+		<a href="#">แผนผังเว็บไซต์</a><span class="slice">|</span>
+			<a href="/th/privacy">นโยบายส่วนบุคคล</a><span class="slice">|</span>
+			<a href="/th/cookies-policy">นโยบายคุกกี้</a>
+		</h3>
+        			<h2 class="TitSB">
+				Copyright <font style="font-family: Arial, Helvetica, sans-serif;">©</font> 2017 Bangkok Hospital All rights reserved
+			</h2>
+		</div>
+</footer>
 </body>
+
+<script src="/themes/custom/bdms/js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="/themes/custom/bdms/js/centerClinicLv2.js"></script>
+<script src="/themes/custom/bdms/js/switchMenu.js"></script>
+<script src="/themes/custom/bdms/js/pickdate/picker.js"></script>
+<script src="/themes/custom/bdms/js/pickdate/picker.date.js"></script>
+<script src="/themes/custom/bdms/js/pickdate/picker.time.js"></script>
+<script src="/themes/custom/bdms/js/megamenu-q.js"></script>
+<script src="/themes/custom/bdms/js/pickdate/legacy.js"></script>
+<script src="/themes/custom/bdms/js/findDoctorModal.js"></script>
+<script src="/themes/custom/bdms/js/changeLanguageModal.js"></script>
+<script src="/themes/custom/bdms/js/searchNav.js"></script>
+
+<script src="/themes/custom/bdms/js/switchClinic1.js"></script>
+<script src="/themes/custom/bdms/js/stickypost.js"></script>
+
+  </div>
+
+    
+
+		<script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"th\/","currentPath":"node\/636","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"th"},"pluralDelimiter":"\u0003","cookieconsent":{"link":"","path":"\/","expiry":365,"target":"_self","domain":".www.bangkokhospital.com","markup":"\u003Cdiv class=\u0022cc_banner cc_container cc_container--open\u0022\u003E\n    \u003Ca href=\u0022#null\u0022 data-cc-event=\u0022click:dismiss\u0022 target=\u0022_blank\u0022 class=\u0022cc_btn cc_btn_accept_all\u0022\u003EGot it!\u003C\/a\u003E\n    \u003Cp class=\u0022cc_message\u0022\u003EThis website uses cookies to ensure you get the best experience on our website \u003Ca data-cc-if=\u0022options.link\u0022 target=\u0022_self\u0022 class=\u0022cc_more_info\u0022 href=\u0022\u0022\u003EMore info\u003C\/a\u003E\u003C\/p\u003E\n    \u003Ca class=\u0022cc_logo\u0022 target=\u0022_blank\u0022 href=\u0022http:\/\/silktide.com\/cookieconsent\u0022\u003ECookie Consent plugin for the EU cookie law\u003C\/a\u003E\n\u003C\/div\u003E\n","container":null,"theme":false},"user":{"uid":0,"permissionsHash":"a83ae992803d37d4de3ac4dadb74b5f42fff3bf868dc0b6bc726a2a057dbf128"}}</script>
+<script src="/sites/default/files/js/js_IMvn9_ZO-VUJ_ZfNX2icPlRyFB-NCAmpeo1kJTrZkzQ.js"></script>
+
+	  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"4cd8688db1","applicationID":"79192854","transactionName":"ZFZaZUtQWUMAVUxQVl0ceVJNWFheTkZZXlxsUFlSUVQ=","queueTime":0,"applicationTime":24,"atts":"SBFZEwNKSk0=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+  
+    
+ 
 </html>
